@@ -6,9 +6,9 @@ import Carousel from "../components/Carousel";
 import { CartContext } from "../context/CartContext";
 
 const productsData = [
-  { id: 1, image: "/images/montre2.jpg", title: "Montre Rolex", description: "Une montre Rolex est une montre de luxe fabriquée par la maison suisse Rolex", colors: ["#ffffff", "#000000"], price: 40000, rating: 4.5, discount: 20, category: "Montres" },
+  { id: 1, image: "/images/montre rolex.jpg", title: "Montre Rolex", description: "Une montre Rolex est une montre de luxe fabriquée par la maison suisse Rolex", colors: ["#ffffff", "#000000"], price: 40000, rating: 4.5, discount: 20, category: "Montres" },
   { id: 2, image: "/images/carrera.jpg", title: "TAG Heuer Carrera", description: "La TAG Heuer Carrera est une collection emblématique de montres de prestige...", colors: [""], price: 23000, rating: 4.2, discount: 19, category: "Montres" },
-  { id: 3, image: "/images/fossil.jpg", title: "Fossil", description: "Une montre Rolex est une montre de luxe fabriquée par la maison suisse Rolex", colors: [""], price: 27500, rating: 4.0, discount: 11, category: "Montres" },
+  { id: 3, image: "/images/watch-fossil.jpg", title: "Fossil", description: "Une montre Rolex est une montre de luxe fabriquée par la maison suisse Rolex", colors: [""], price: 27500, rating: 4.0, discount: 11, category: "Montres" },
   { id: 4, image: "/images/montre_luxe.jpg", title: "Versatile Haus", Description:"La montre Calypso K5560-2 est strictement réservée à la gent masculine.", colors: [""], price: 11450, rating: 3.8, discount: 5, category: "Montres" },
   { id: 5, image: "/images/bol.jpg", title: "Montre Femme:Bol", Description:"Montre Femme Time Force TF4186L11", colors: [""], price: 16300,rating: 2.5, discount: 5, category: "Montres" },
   { id: 6, image: "/images/free smartwatch.jpg", title: "Free Smartwatch", Description:"une montre connectée Bluetooth 5.0 au format rectangulaire dotée d'un écran Amoled de 1,64", colors: [""], price: 32810,rating: 3.5, discount: 15, category: "Montres" },

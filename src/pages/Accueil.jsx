@@ -9,17 +9,15 @@ const Accueil = () => {
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleNavigate = (path) => {
-    // Réinitialiser l’erreur
     setErrorMessage("");
 
     if (!userLoggedIn) {
-      setErrorMessage("Vous devez vous connecter pour effectuer cette action.");
+      setErrorMessage("⚠️ Vous devez vous connecter pour effectuer cette action.");
       return;
     }
     navigate(path);
   };
 
-  // Exemple : si userLoggedIn change, on peut effacer l’erreur automatiquement
   useEffect(() => {
     if (userLoggedIn) {
       setErrorMessage("");
@@ -37,19 +35,23 @@ const Accueil = () => {
             Faites-vous plaisir sans vous ruiner : les meilleurs deals sur vos produits préférés.
           </p>
 
-          {errorMessage && (
-            <div className="mb-4 px-4 py-2 bg-red-100 text-red-700 rounded">
-              {errorMessage}
-            </div>
-          )}
-
-          <div className="flex justify-center lg:justify-start gap-4">
+          <div className="flex flex-col items-center lg:items-start gap-4">
+            {/* Bouton Shop Now */}
             <button
-              onClick={() => handleNavigate("/products")}
+              onClick={() => handleNavigate("/produits")}
               className="px-6 py-3 bg-pink-900 text-white text-sm font-semibold rounded-lg shadow hover:bg-pink-600 transition"
             >
               Shop Now
             </button>
+
+            {/* Message d'erreur au centre */}
+            {errorMessage && (
+              <div className="px-4 py-2 bg-red-100 text-red-700 text-sm font-medium rounded w-full text-center">
+                {errorMessage}
+              </div>
+            )}
+
+            {/* Bouton View Offers */}
             <button
               onClick={() => handleNavigate("/offers")}
               className="px-6 py-3 border border-pink-500 text-pink-600 text-sm font-semibold rounded-lg hover:bg-pink-200 transition"
@@ -58,8 +60,9 @@ const Accueil = () => {
             </button>
           </div>
         </div>
+
         <div className="w-full lg:w-1/2 flex justify-center">
-          <img src={montre3} alt="Hero montre" />
+          <img src={montre3} alt="Hero montre" className="rounded-lg shadow-md" />
         </div>
       </div>
     </section>
@@ -67,6 +70,7 @@ const Accueil = () => {
 };
 
 export default Accueil;
+
 
 
 
