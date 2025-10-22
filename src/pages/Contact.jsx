@@ -55,7 +55,7 @@ const Contact = () => {
 
           <div className="flex items-center space-x-4">
             <FaPhone className="text-green-600 text-2xl" />
-            <p className="text-gray-700">+221 77 000 00 00</p>
+            <p className="text-gray-700">+221 77 426 68 48</p>
           </div>
 
           <div className="flex items-center space-x-4">
@@ -69,29 +69,37 @@ const Contact = () => {
             </h3>
             <div className="flex space-x-4">
               <a
-                href="#"
-                className="bg-pink-200 hover:bg-pink-300 p-3 rounded-full transition duration-300"
-              >
-                <FaInstagram className="text-pink-950" />
-              </a>
+      href="https://www.instagram.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-pink-200 hover:bg-pink-300 p-3 rounded-full transition duration-300"
+    >
+      <FaInstagram className="text-pink-950" />
+    </a>
+             <a
+      href="https://www.facebook.com/ta.page"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-pink-200 hover:bg-pink-300 p-3 rounded-full transition duration-300"
+    >
+      <FaFacebook className="text-pink-950" />
+    </a>
               <a
-                href="#"
-                className="bg-pink-200 hover:bg-pink-300 p-3 rounded-full transition duration-300"
-              >
-                <FaFacebook className="text-pink-950" />
-              </a>
+      href="https://twitter.com/ton_compte"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-pink-200 hover:bg-pink-300 p-3 rounded-full transition duration-300"
+    >
+      <FaTwitter className="text-pink-950" />
+    </a>
               <a
-                href="#"
-                className="bg-pink-200 hover:bg-pink-300 p-3 rounded-full transition duration-300"
-              >
-                <FaTwitter className="text-pink-950" />
-              </a>
-              <a
-                href="#"
-                className="bg-pink-200 hover:bg-pink-300 p-3 rounded-full transition duration-300"
-              >
-                <FaLinkedin className="text-pink-950" />
-              </a>
+      href="https://www.linkedin.com/in/ton-profil"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-pink-200 hover:bg-pink-300 p-3 rounded-full transition duration-300"
+    >
+      <FaLinkedin className="text-pink-950" />
+    </a>
             </div>
           </div>
         </div>
